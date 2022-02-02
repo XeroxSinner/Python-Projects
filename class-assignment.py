@@ -5,11 +5,14 @@ class Media:
     name = ""
     upc = ""
     release = ""
-    
+
+#defines first child class & attributes    
 class Music(Media):
     artist = ""
     format = ""
-    
+
+
+#defines second child class & attributes    
 class Book(Media):
     author = ""
     publisher = ""
