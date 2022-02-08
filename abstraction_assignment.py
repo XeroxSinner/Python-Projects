@@ -25,20 +25,31 @@ obj.payment("$350")
 
 ##Code example used from outside source for further comprehension
 class animal(ABC):
-    def move(self, name):
-        print("This {} has legs.".format(name))
+    def move(self):
+        print("This animal has legs.")
         pass
+    def overWrite(self):
+        pass
+    
+    ##Need an abstract method
     
 class horse(animal):
     def legs(self, name):
         print("This {} has 4 legs.".format(name))
+    def overWrite(self):
+        print("Overwriting the parent method.")
+        
+    ##need to overwrite the abstract method with implementation of method
         
 
 
 x = horse()
 x.legs('horse')
-x.move('horse')
+x.move()
+x.overWrite()
+
 y = animal()
-y.move('dog')
+y.move()
+y.overWrite()
 
 
