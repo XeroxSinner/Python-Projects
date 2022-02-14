@@ -41,6 +41,16 @@ else:
     print("London is closed.")
     
     
+    
 ## Possibly cleaner to convert all times to UTC and then >/< UTC?
 ## Also need to review iterating through string, cause this is ugly AF
 
+##Replace function -
+
+# def replace(location, hour, min, sec, mics):
+#     open = location.replace(hour=hour, minute=min, second=sec, microsecond=mics)
+#     close = location.replace(hour=17, minute=0, second=0, microsecond=0)
+#     return close
+
+# replace("Portland", )
+    
