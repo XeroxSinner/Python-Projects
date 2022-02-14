@@ -18,12 +18,9 @@ with conn:
     conn.commit
 
 #Script below will add only .txt files to the database created above
-for x in fileNames:
-    if x.endswith('txt'):
-        with conn:
-            cur = conn.cursor()
-            cur.execute("INSERT INTO tbl_filelist (col_fileName) VALUES (?)", (x,))
-            print (x)
-
+with conn:
+    cur= conn.cursor()
+    cur.execute("INSERT INTO tbl_filelist(")
+    
 conn.close()
 
